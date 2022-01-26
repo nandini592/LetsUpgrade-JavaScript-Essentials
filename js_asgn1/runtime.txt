@@ -1,0 +1,47 @@
+******Learn about JS runtime*******
+
+What is Runtime Environment?
+
+A runtime environment is where a program will be executed. It determines what global objects your program can access and it can also impact how it runs. 
+
+There two types of runtime environments:
+
+1) runtime environment of a browser (like Chrome, or microsoft edge)
+2) Node runtime environment
+
+Let us each one of them in detail:
+
+.............Browser............
+
+- It is the most common place where JavaScript code is executed is in a browser. You can create file in any text editor with ".html" extension.
+  For example -  myfirstprogram.html.
+
+- A <script/> tag is embedded in html file which interlinks to javascript file.
+- Console.log() is used to print the ouput of js file in console window
+
+It is categorised into for parts:-
+
+1) The JavaScript engine (which in turn is made up of the heap and the call stack)
+           
+       The purpose of the JavaScript engine is to translate source code that developers write into machine code that allows a computer to perform specific tasks.
+
+2) Web APIs
+
+       The Web APIs are not a part of the JavaScript engine, but they are part of the runtime environment provided by the browser. There are a large number of APIs available in modern browsers that allow us to a wide variety of things.
+        Categories include Manipulate documents,Draw and manipulate graphics,Fetch data from a server.
+
+3) The callback queue
+    
+        The callback queue stores the callback functions sent from the Web APIs in the order in which they were added. This queue is a data structure that runs first in, first out. The queue uses the array push method to add a new callback function to the end of the queue and the array shift method to remove the first item in the queue.
+
+4) The event loop
+
+    The job of the event loop is to constantly monitor the state of the call stack and the callback queue. If the stack is empty it will grab a callback from the callback queue and put it onto the call stack, scheduling it for execution.
+
+
+
+................Node runtime environment................
+
+The Node runtime environment was created for the purpose of executing JavaScript code without a browser, thus enabling programmers to create full-stack (front-end and back-end) applications using only the JavaScript language.
+
+Node is an entirely different runtime environment, meaning that browser-environment data values and functions, like window.alert(), can’t be used. Instead, the Node runtime environment gives back-end applications access to a variety of features unavailable in a browser, such as access to the server’s file system, database, and network.
